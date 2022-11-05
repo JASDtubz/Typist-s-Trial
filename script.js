@@ -1,10 +1,9 @@
-/* Version 2022.11.05.18.40 */
+/* Version 2022.11.05.18.53 */
 
-document.addEventListner('keydown', function(e) {
-  if (e.keyCode == 37) {
-    alert('Left was pressed');
-  }
-  else if (e.keyCode == 39) {
-    alert('Right was pressed');
-  }
-});
+function setKeyDownListener() {
+  window.addEventListener("keydown", function(e) { keyDown(e.key); })
+}
+
+function keyDown(key) {
+  alert("Key pressed: " + key);
+}
