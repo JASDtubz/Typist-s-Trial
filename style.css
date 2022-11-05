@@ -1,4 +1,4 @@
-/* Version 2022.11.05.18.26 */
+/* Version 2022.11.05.18.57 */
 body {
   background-color: #012345;
   color: #fedcba;
@@ -6,15 +6,15 @@ body {
 }
 
 h1 {
-  width: 50%;
+  padding: 0px 25% 0px 25%;
 }
 
 h2 {
-  width: 50%;
+  padding: 0px 25% 0px 25%;
 }
 
 h3 {
-  width: 50%
+  padding: 0px 25% 0px 25%;
 }
 
 #input {
