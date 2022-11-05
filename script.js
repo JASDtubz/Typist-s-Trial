@@ -1,4 +1,4 @@
-/* Version 2022.11.5.6.23 */
+/* Version 2022.11.05.18.26 */
 
 document.addEventListner('keydown', function(e)
   if (e.keyCode == 37) {
