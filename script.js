@@ -1,4 +1,4 @@
-/* Version 2022.11.06.14.34 */
+/* Version 2022.11.06.15.04 */
 
 var home = true;
 var trial = null;
@@ -8,7 +8,8 @@ var prompts = [
     "Don't expect a WPM score.",
     "Have you heard of the hit game Among Us?",
     "The quick brown fox jumps over the lazy dog.",
-    "What's the longest town name in Wales?"
+    "What's the longest town name in Wales?",
+    "The record time on the trial is 214 seconds."
   ],
   [
     
