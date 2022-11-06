@@ -1,4 +1,4 @@
-/* Version 2022.11.06.14.19 */
+/* Version 2022.11.06.14.29 */
 
 var home = true;
 var trial = null;
@@ -79,7 +79,7 @@ function keyDown(key) {
             i = Math.floor(Math.random() * prompts[0].length);
             b = false;
             
-            for (int j = 0; j < indexes.length; j++) {
+            for (let j = 0; j < indexes.length; j++) {
               if (indexes[j] == i) {
                 b = true;
               }
