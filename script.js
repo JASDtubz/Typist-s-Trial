@@ -1,4 +1,4 @@
-/* Version 2022.11.06.14.29 */
+/* Version 2022.11.06.14.31 */
 
 var home = true;
 var trial = null;
@@ -21,7 +21,7 @@ function loadListeners() {
   window.addEventListener("keydown", function(e) {
     keyDown(e.key);
   });
-  window.addEventListner("pointerenter", function(e) {
+  window.addEventListener("pointerenter", function(e) {
     
   });
 }
