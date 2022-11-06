@@ -1,6 +1,7 @@
-/* Version 2022.11.06.07.21 */
+/* Version 2022.11.06.07.55 */
 
 var home = true;
+var prompts = JSON.parse("prompts");
 
 function setKeyDownListener() {
   window.addEventListener("keydown", function(e) {
@@ -23,13 +24,13 @@ function keyDown(key) {
   
   if (key == "." || key == "!" || key == "?") {
     if (input.textContent == "Warm-up.") {
-      
+      alert(prompts[0][0]);
     }
     else if (input.textContent == "Trial.") {
       
     }
     else {
-      input.textContent = "©";
+      input.textContent = " ";
       input.style.backgroundColor = "#7f3f1f";
       input.style.color = "#7f3f1f";
       
