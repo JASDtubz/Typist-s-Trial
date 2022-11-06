@@ -1,4 +1,4 @@
-/* Version 2022.11.05.22.51 */
+/* Version 2022.11.05.22.59 */
 
 var home = true;
 
@@ -14,6 +14,7 @@ function keyDown(key) {
   if (key.length == 1) {
     if (home || input.textContent == "©") {
       input.textContent = "";
+      input.style.color = "#012345";
       home = false;
     }
     
@@ -34,6 +35,7 @@ function keyDown(key) {
       
       setTimeout(function() {
         input.style.backgroundColor = "#112233";
+        input.style.color = "#112233";
       }, 500);
     }
   }
