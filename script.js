@@ -1,4 +1,4 @@
-/* Version 2022.11.05.22.59 */
+/* Version 2022.11.05.23.10 */
 
 var home = true;
 
@@ -14,7 +14,7 @@ function keyDown(key) {
   if (key.length == 1) {
     if (home || input.textContent == "©") {
       input.textContent = "";
-      input.style.color = "#012345";
+      input.style.color = "#fedcba";
       home = false;
     }
     
