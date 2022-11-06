@@ -1,4 +1,4 @@
-/* Version 2022.11.06.14.15 */
+/* Version 2022.11.06.14.19 */
 
 var home = true;
 var trial = null;
@@ -17,7 +17,7 @@ var prompts = [
 var sentance = null;
 var indexes = [];
 
-function onLoad() {
+function loadListeners() {
   window.addEventListener("keydown", function(e) {
     keyDown(e.key);
   });
