@@ -14,15 +14,11 @@ h2 {
 }
 
 h3 {
-  padding: 0px 25% 0px 25%;
+  background-color: #223311;
 }
 
 #half {
   padding: 0px 25% 0px 25%;
-}
-
-#text {
-  background-color: 223311;
 }
 
 #input {
