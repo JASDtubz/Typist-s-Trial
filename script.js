@@ -1,4 +1,4 @@
-/* Version 2022.11.06.14.31 */
+/* Version 2022.11.06.14.34 */
 
 var home = true;
 var trial = null;
@@ -40,9 +40,11 @@ function keyDown(key) {
   }
   
   if (key == "." || key == "!" || key == "?") {
+    var typed = input.textContent;
+    
     input.textContent = " ";
     
-    if (sentance == null && input.textContent == "Warm-up.") {
+    if (sentance == null && typed == "Warm-up.") {
       let i = Math.floor(Math.random() * prompts[0].length);
       
       trial = false;
@@ -56,11 +58,11 @@ function keyDown(key) {
         input.style.background = "#112233";
       }, 500);
     }
-    else if (sentance == null && input.textContent == "Trial.") {
+    else if (sentance == null && typed == "Trial.") {
       trial = true;
       
     }
-    else if (sentance != null && input.textContent == sentance) {
+    else if (sentance != null && typed == sentance) {
       if (indexes.length == 5) {
         home = true;
         sentance = null;
