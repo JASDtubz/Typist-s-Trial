@@ -1,4 +1,4 @@
-/* Version 2022.11.05.21.40 */
+/* Version 2022.11.05.21.50 */
 
 var home = true;
 
@@ -9,7 +9,7 @@ function setKeyDownListener() {
 }
 
 function keyDown(key) {
-  if (home) {
+  if (home == true) {
     document.getElementById("input").textConent = "";
     home = false;
   }
