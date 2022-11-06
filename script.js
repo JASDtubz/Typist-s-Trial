@@ -1,4 +1,4 @@
-/* Version 2022.11.05.22.35 */
+/* Version 2022.11.05.22.51 */
 
 var home = true;
 
@@ -8,28 +8,32 @@ function setKeyDownListener() {
   });
 }
 
-function keyDown(key) { 
+function keyDown(key) {
+  var input = document.getElementById("input");
+  
   if (key.length == 1) {
-    if (home) {
-      document.getElementById("input").textContent = "";
+    if (home || input.textContent == "©") {
+      input.textContent = "";
       home = false;
     }
     
-    document.getElementById("input").textContent = document.getElementById("input").textContent + key;
+    input.textContent = input.textContent + key;
   }
   
   if (key == "." || key == "!" || key == "?") {
-    if (document.getElementById("input").textContent == "Warm-up.") {
+    if (input.textContent == "Warm-up.") {
       
     }
-    else if (document.getElementById("input").textContent == "Trial.") {
+    else if (input.textContent == "Trial.") {
       
     }
     else {
-      document.getElementById("input").textContent = "";
-      document.getElementById("input").style.backgroundColor = "#fabeb4";
+      input.textContent = "©";
+      input.style.backgroundColor = "#7f3f1f";
+      input.style.color = "#7f3f1f";
+      
       setTimeout(function() {
-        document.getElementById("input").style.backgroundColor = "#112233";
+        input.style.backgroundColor = "#112233";
       }, 500);
     }
   }
