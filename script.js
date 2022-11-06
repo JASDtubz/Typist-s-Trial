@@ -1,4 +1,4 @@
-/* Version 2022.11.06.14.07 */
+/* Version 2022.11.06.14.15 */
 
 var home = true;
 var trial = null;
@@ -33,7 +33,6 @@ function keyDown(key) {
   if (key.length == 1) {
     if (home || input.textContent == " ") {
       input.textContent = "";
-      input.style.color = "#fedcba";
       home = false;
     }
     
@@ -49,11 +48,17 @@ function keyDown(key) {
       trial = false;
       sentance = prompts[0][i];
       text.textContent = sentance;
+      input.style.backgroundColor = "#7f7f1f";
       
       indexes.push(i);
+      
+      setTimeout(function() {
+        input.style.background = "#112233";
+      }, 500);
     }
     else if (sentance == null && input.textContent == "Trial.") {
       trial = true;
+      
     }
     else if (sentance != null && input.textContent == sentance) {
       if (indexes.length == 5) {
@@ -90,14 +95,9 @@ function keyDown(key) {
     }
     else {
       input.style.backgroundColor = "#7f3f1f";
-      input.style.color = "#7f3f1f";
       
       setTimeout(function() {
         input.style.backgroundColor = "#112233";
-        
-        if (input.textContent == " ") {
-          input.style.color = "#112233";
-        }
       }, 500);
     }
   }
