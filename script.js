@@ -1,6 +1,7 @@
-/* Version 2022.11.06.11.00 */
+/* Version 2022.11.06.11.42 */
 
 var home = true;
+var trial = null;
 var prompts = [
   [
     "001000101 110100100.",
@@ -13,6 +14,8 @@ var prompts = [
     
   ]
 ];
+var sentance = null;
+var indexes = [];
 
 function setKeyDownListener() {
   window.addEventListener("keydown", function(e) {
@@ -34,10 +37,20 @@ function keyDown(key) {
   }
   
   if (key == "." || key == "!" || key == "?") {
-    if (input.textContent == "Warm-up.") {
-      alert(prompts[0][0]);
+    if (sentance == null && input.textContent == "Warm-up.") {
+      let i = Math.floor(Math.random() * prompts[0].length);
+      
+      trial = false;
+      input.textContent = " ";
+      sentance = prompts[0][i];
+      document.getElementById("text").textContent = sentance;
+      
+      indexes.push(i);
     }
-    else if (input.textContent == "Trial.") {
+    else if (sentance == null && input.textContent == "Trial.") {
+      trial = true;
+    }
+    else if (sentance != null && input.textContent == sentance) {
       
     }
     else {
