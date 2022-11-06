@@ -1,4 +1,4 @@
-/* Version 2022.11.06.07.14 */
+/* Version 2022.11.06.07.21 */
 
 var home = true;
 
@@ -12,7 +12,7 @@ function keyDown(key) {
   var input = document.getElementById("input");
   
   if (key.length == 1) {
-    if (home || input.textContent == "©") {
+    if (home || input.textContent == " ") {
       input.textContent = "";
       input.style.color = "#fedcba";
       home = false;
@@ -36,7 +36,7 @@ function keyDown(key) {
       setTimeout(function() {
         input.style.backgroundColor = "#112233";
         
-        if (input.textContent == "©") {
+        if (input.textContent == " ") {
           input.style.color = "#112233";
         }
       }, 500);
