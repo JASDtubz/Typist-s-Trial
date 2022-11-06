@@ -1,7 +1,18 @@
-/* Version 2022.11.06.07.55 */
+/* Version 2022.11.06.11.00 */
 
 var home = true;
-var prompts = JSON.parse("prompts");
+var prompts = [
+  [
+    "001000101 110100100.",
+    "Don't expect a WPM score.",
+    "Have you heard of the hit game Among Us?",
+    "The quick brown fox jumps over the lazy dog.",
+    "What's the longest town name in Wales?"
+  ],
+  [
+    
+  ]
+];
 
 function setKeyDownListener() {
   window.addEventListener("keydown", function(e) {
