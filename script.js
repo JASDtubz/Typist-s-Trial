@@ -1,15 +1,19 @@
-/* Version 2022.11.06.15.04 */
+/* Version 2022.11.06.15.12 */
 
 var home = true;
 var trial = null;
 var prompts = [
   [
     "001000101 110100100.",
+    "Buy yourself a copy of the APCS Principles Prep Book.",
     "Don't expect a WPM score.",
+    "Five dollar foot long.",
     "Have you heard of the hit game Among Us?",
+    "Hello, world!",
+    "I hope you know how to use the international keyboard.",
     "The quick brown fox jumps over the lazy dog.",
-    "What's the longest town name in Wales?",
-    "The record time on the trial is 214 seconds."
+    "The record time on the trial is 214 seconds.",
+    "What's the longest town name in Wales?"
   ],
   [
     
