@@ -1,4 +1,4 @@
-/* Version 2022.11.07.09.40 */
+/* Version 2022.11.07.09.43 */
 
 var home = true;
 var trial = null;
@@ -53,7 +53,7 @@ function keyDown(key) {
     
     input.textContent = " ";
     
-    if (sentance == null && typed == "Warm-up." || typed == "Trial.") {
+    if (sentance == null && (typed == "Warm-up." || typed == "Trial.")) {
       let ind = typed == "Trial" ? 1 : 0;
       let i = Math.floor(Math.random() * prompts[ind].length);
       
