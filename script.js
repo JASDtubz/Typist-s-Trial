@@ -1,4 +1,4 @@
-/* Version 2022.11.07.08.10 */
+/* Version 2022.11.07.09.23 */
 
 var home = true;
 var trial = null;
@@ -26,9 +26,9 @@ function loadListeners() {
   window.addEventListener("keydown", function(e) {
     keyDown(e.key);
   });
-  window.addEventListener("pointerenter", function(e) {
+//   window.addEventListener("pointerenter", function(e) {
     
-  });
+//   });
 }
 
 function keyDown(key) {
@@ -104,4 +104,18 @@ function keyDown(key) {
       }, 500);
     }
   }
+}
+
+function reset() {
+  home = true;
+  trial = null;
+  sentance = null;
+  indexes = [];
+  
+  document.getElementById("text").textContent =
+    "Welcome to the Typist's Trial, this will test your ability to accurately and efficiently replicate displayed text. " +
+    "To begin, please type 'Warm-up.' for a simpler challenge or 'Trial.' for the real deal. Good luck!";
+  document.getElementById("input").textContent =
+    "You'll see your typing here, end entries with a punctuation mark to submit. " +
+    "There is no deleting, precision is key. Click the reset button to return to this hub at any time."
 }
