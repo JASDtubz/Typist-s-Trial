@@ -1,4 +1,4 @@
-/* Version 2022.11.07.09.23 */
+/* Version 2022.11.07.09.40 */
 
 var home = true;
 var trial = null;
@@ -16,7 +16,11 @@ var prompts = [
     "What's the longest town name in Wales?"
   ],
   [
-    
+    "01001000 01100101 01101100 01101100 01101111.",
+    "Hello, we've been trying to reach you about your car's extended warranty.",
+    "I'm afraid you've contracted pneumonoultramicroscopicsilicovolcanoconiosis.",
+    "The FitnessGram Pacer Test is a multistage aerobic capacity test that gets progressively more difficult as it continues.",
+    "This Disney DVD is enhanced with Disney's FastPlay, your movie and a selection of bonus features will begin automatically."
   ]
 ];
 var sentance = null;
@@ -69,7 +73,9 @@ function keyDown(key) {
         sentance = null;
         trial = null;
         indexes = [];
-        text.textContent = "Well done, you're ready for trial mode! Type 'Warm-up.' again to try for a better time or 'Trial.' for the real deal. Good luck!";
+        text.textContent = trial
+          ? "Excellent job, you're a keyboard master! Type 'Warm-up.' to take a step back or 'Trial.' to try for a better time. Good luck!"
+          : "Well done, you're ready for trial mode! Type 'Warm-up.' again to try for a better time or 'Trial.' for the real deal. Good luck!";
       } else {
         let ind = trial ? 1 : 0;
         let b = true;
