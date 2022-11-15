@@ -1,57 +1,32 @@
-/* Version 2022.11.15.09.20 */
+/* Version 2022.11.15.09.44 */
 
 body {
   background-color: #012345;
   color: #fedcba;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .topnav {
   background-color: #333333;
+  overflow: hidden;
   width: 100%;
 }
 
-#menu {
+.topnav img {
   float: left;
   height: 5%;
   width: 5%;
+}
+
+.title {
+  float: left;
+  text-align: center;
 }
 
 #title {
-  float: left;
-  text-align: center;
   width: 20%;
-}
-
-#settings {
-  float: left;
-  height: 5%;
-  width: 5%;
 }
 
 .main {
   padding: 1em;
-}
-
-#half {
-  padding: 0px 20% 0px 20%;
-}
-
-#area {
-  background-color: #77777f;
-  padding: 8% 8% 8% 8%;
-}
-
-#input {
-  background-color: #112233;
-}
-
-#reset {
-  background-color: #333333;
-  padding: 2em;
-}
-
-.footer {
-  bottom: 0;
-  color: #000000;
 }
