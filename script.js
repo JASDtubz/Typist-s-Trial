@@ -1,4 +1,4 @@
-/* Version 2022.11.07.09.48 */
+/* Version 2022.11.16.09.49 */
 
 var home = true;
 var trial = null;
@@ -45,7 +45,11 @@ function keyDown(key) {
       home = false;
     }
     
-    input.textContent = input.textContent + key;
+    if (key == " ") {
+      input.textContent += "\u0020";
+    } else {
+      input.textContent += key;
+    }
   }
   
   if (key == "." || key == "!" || key == "?") {
