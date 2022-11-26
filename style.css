@@ -1,143 +1,42 @@
-/* Version 2022.11.26.12.29 */
-
-html {
-  height: 100%;
-  width: 100%;
-}
+/* Version 2022.11.08.18.52 */
 
 body {
-  background-color: #e6fff0;
-  font-family: "Times New Roman", Times, serif;
-  height: 100%;
-  margin: 0%;
-  padding: 0%;
+  background-color: #012345;
+  color: #fedcba;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.topnav {
-  background-color: #3c64f0;
-  color: #ffffff;
-  height: 5%;
-  overflow: hidden;
-  padding: 0%;
-  width: 100%;
+h1 {
+  padding: 0px 25% 0px 25%;
 }
 
-.topnav img {
-  height: 100%;
-  width: 2.8125%;
+h2 {
+  padding: 0px 25% 0px 25%;
 }
 
-#menu {
-  float: left;
+h3 {
+  background-color: #221133;
 }
 
-.title {
-  float: right;
-  text-align: center;
-  width: 80%;
+#half {
+  padding: 0px 20% 0px 20%;
 }
 
-.title-text {
-  float: right;
-  font-size: 250%;
-  margin: 0%;
-  width: 33.333%;
-}
-
-.rimg {
-  float: right;
-}
-
-.main {
-  height: 80%;
-  margin: 0%;
-  width: 100%;
-}
-
-.ad {
-  background-color: #ff88bb;
-  float: left;
-  height: 100%;
-  margin: 0%;
-  padding: 1em;
-  width: 20%;
-}
-
-/* #lad {
-  float: left;
-}
-
-#rad {
-  float: right;
-} */
-
-#bigger {
-  height: 100%;
-  width: 100%;
-}
-
-.game {
-  /*float: left;*/
-  height: 100%;
-  margin: 1em;
-  width: 60%;
-}
-
-#c {
-  height: 100%;
-}
-
-.infod {
-  color: #3c64f0;
-  height: 5%;
-  width: 100%;
-}
-
-.info {
-  margin: 0%;
-  width: 50%;
-}
-
-#clears {
-  float: left;
-  
-}
-
-#time {
-  float: right;
-}
-
-.outer {
-  background-color: #e6fff0;
-  height: 60%;
-  width: 100%;
-}
-
-.play {
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 175%;
-  height: 40%;
-  width: 80%;
-}
-
-#prompt {
-  margin: 0%;
+#area {
+  background-color: #77777f;
+  padding: 8% 8% 8% 8%;
 }
 
 #input {
-  height: 100%;
-  width: 100%;
+  background-color: #112233;
 }
 
-#warm-up {
-  float: left;
+#reset {
+  background-color: #333333;
+  padding: 2em;
 }
 
-#trial {
-  float: right;
-}
-
-#footer {
+.footer {
   bottom: 0;
+  color: #000000;
 }
